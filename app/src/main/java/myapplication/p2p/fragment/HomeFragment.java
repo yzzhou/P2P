@@ -6,7 +6,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+
+import myapplication.p2p.R;
+import myapplication.p2p.utils.UIUtils;
 
 /**
  * Created by zhouzhou on 2017/6/20.
@@ -16,9 +18,8 @@ public class HomeFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        TextView textView = new TextView(getActivity());
-        textView.setText("aaa");
-        return textView;
+
+        return UIUtils.Infelat(R.layout.fragment_home);
     }
 
     @Override

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/P2P.iml" filepath="$PROJECT_DIR$/P2P.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2p0224/p2p0224.iml" filepath="$PROJECT_DIR$/p2p0224/p2p0224.iml" />
     </modules>
   </component>
 </project>

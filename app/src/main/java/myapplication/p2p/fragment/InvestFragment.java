@@ -1,5 +1,6 @@
 package myapplication.p2p.fragment;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -18,6 +19,7 @@ public class InvestFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         TextView textView = new TextView(getActivity());
         textView.setText("bbb");
+        textView.setTextColor(Color.BLACK);
         return textView;
     }
 
