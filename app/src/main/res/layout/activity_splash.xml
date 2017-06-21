@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_splash"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/start_background"
-    tools:context="myapplication.p2p.activity.SplashActivity">
+    android:background="@drawable/start_background">
+
     <ImageView
         android:id="@+id/iv_welcome_icon"
         android:layout_width="wrap_content"
@@ -35,16 +35,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="当前版本:"
-            android:textColor="@android:color/white"
-            android:textSize="15sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/splash_tv_version"
-            android:text="1.1"
+            android:text="当前版本1.0"
             android:textColor="@android:color/white"
             android:textSize="15sp" />
     </LinearLayout>
 </RelativeLayout>
+
+

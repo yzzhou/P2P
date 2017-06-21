@@ -25,7 +25,6 @@
         <item name="android:padding">20dp</item>
         <item name="android:textColor">@color/more_text</item>
         <item name="android:textSize">25sp</item>
-
     </style>
 
     <!--自定义viewpagerIndicator样式-->
@@ -56,9 +55,9 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">55dp</item>
         <item name="android:layout_marginTop">1dp</item>
-        <item name="android:background">@color/white</item>
+        <item name="android:background">@android:color/white</item>
         <item name="android:drawablePadding">8dp</item>
-        <item name="android:drawableRight">@drawable/right</item>
+        <item name="android:drawableRight">@android:color/white</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:paddingLeft">20dp</item>
         <item name="android:paddingRight">20dp</item>
