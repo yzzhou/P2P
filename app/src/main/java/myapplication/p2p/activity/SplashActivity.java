@@ -15,6 +15,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import myapplication.p2p.R;
 import myapplication.p2p.common.AppManager;
+import myapplication.p2p.utils.UIUtils;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -80,7 +81,7 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void initView() {
-            splashTvVersion.setText(getVersionCode());
+            splashTvVersion.setText(UIUtils.stringFormat(R.string.splash_version,getVersionCode()));
     }
 
     private String getVersionCode() {
