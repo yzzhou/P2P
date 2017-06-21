@@ -16,6 +16,7 @@ import java.util.TimerTask;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import myapplication.p2p.R;
+import myapplication.p2p.common.AppManager;
 import myapplication.p2p.fragment.HomeFragment;
 import myapplication.p2p.fragment.InvestFragment;
 import myapplication.p2p.fragment.MoreFragment;
@@ -47,10 +48,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
+        AppManager.getInstance().addActivity(this);
         initdata();
         initView();
         initListener();
+    }
+
+    @Override
+    protected void onDestroy() {
+        AppManager.getInstance().removeActivity(this);
+
+        super.onDestroy();
     }
 
     private void initListener() {

@@ -14,6 +14,7 @@ import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import myapplication.p2p.R;
+import myapplication.p2p.common.AppManager;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -29,9 +30,17 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         ButterKnife.bind(this);
+        AppManager.getInstance().addActivity(this);
         initView();
         initData();
         initListener();
+    }
+
+    @Override
+    protected void onDestroy() {
+        AppManager.getInstance().removeActivity(this);
+        //AppManager.getInstance().removeActivity(this);
+        super.onDestroy();
     }
 
     private void initListener() {
